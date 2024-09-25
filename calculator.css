@@ -1,0 +1,280 @@
+body {
+  background : linear-gradient(to bottom right
+  , rgb(192, 132, 53),rgb(158, 65, 158)) ;
+  color: #e7d8d8;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200;
+  height: 734px;
+  }
+
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7rem 10%;
+    height: 1rem;
+    background-color: none;
+    box-shadow: 0 1px 10px white;
+  }
+
+
+
+  header .logo {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: yellow;
+  }
+  header .logo i {
+    font-size: 2.2rem;
+    text-align: left;
+    justify-items: center;
+  }
+
+  header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .navbar li {
+    margin-left: 2rem;
+  }
+  header .navbar ul li a {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.04rem;
+    transition: 0.2s;
+  }
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover {
+    color: white;
+    border-bottom: 0.2rem solid yellow;
+    padding: 0.5rem 0;
+  }
+
+header .logo:hover{
+  color: white;
+    border-bottom: 0.2rem solid yellow;
+    padding: 0.5rem 0;
+
+}
+
+
+
+
+
+
+.container{
+  padding: 5px;
+    margin-top: 70px;
+    align-items: center;
+    justify-items: center;
+    height: 580px;
+	  width: 460px;
+    border-radius: 20px; /* Add border-radius for curved corners */
+    box-shadow: 0 0 40px white; /* Optional: Add a shadow for depth */
+}
+
+  
+
+span, .button{
+  background-color: rgb(62, 13, 238);
+  color: white;
+  text-align: center;
+  
+}
+
+
+  .calculator {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 500px;
+	  width: 400px;
+    border-radius: 20px; /* Add border-radius for curved corners */
+    overflow: hidden;
+    background-color: whitesmoke;
+  
+  }
+  
+  #display {
+    width: 100%;
+    margin: 15px 0;
+    padding: 20px;
+    font-size: 1.5em;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  
+  button {
+    padding: 15px;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  /* Align buttons to their respective rows and columns */
+  button:nth-child(1),
+  button:nth-child(2),
+  button:nth-child(3),
+  button:nth-child(4) {
+    grid-row: 1;
+  }
+  
+  button:nth-child(5),
+  button:nth-child(6),
+  button:nth-child(7),
+  button:nth-child(8) {
+    grid-row: 2;
+  }
+  
+  button:nth-child(9),
+  button:nth-child(10),
+  button:nth-child(11),
+  button:nth-child(12) {
+    grid-row: 3;
+  }
+  
+  button:nth-child(13),
+  button:nth-child(14),
+  button:nth-child(15),
+  button:nth-child(16) {
+    grid-row: 4;
+  }
+  
+  button:nth-child(17),
+  button:nth-child(18),
+  button:nth-child(19),
+  button:nth-child(20) {
+    grid-row: 5;
+  }
+  
+  /* Align buttons to the rightmost column */
+  button:nth-child(4),
+  button:nth-child(8),
+  button:nth-child(12),
+  button:nth-child(16),
+  button:nth-child(20) {
+    grid-column: 4;
+  }
+  
+
+
+
+/* Different color for operators */
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16),
+button:nth-child(20) {
+  background-color: lightseagreen; /* Tomato color for operators */
+  color: #fff; /* White text color for operators */
+}
+
+/* Different color for CE, C, and % buttons */
+button:nth-child(1),
+button:nth-child(2),
+button:nth-child(3) {
+  background-color: lightseagreen; /* Slate Blue color for CE, C, and % buttons */
+  color: #fff; /* White text color for CE, C, and % buttons */
+}
+
+
+/* Different color for the "=" button */
+button:nth-child(20) {
+  background-color: #6b0e87; /* Cadet Blue color for "=" button */
+  color: #fff; /* White text color for "=" button */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hover section for buttons*/
+button:nth-child(4):hover{
+  background-color: rgb(31, 166, 162); /* Slate Blue color for CE, C, and % buttons */
+  color: #fff; /* White text color for CE, C, and % buttons */
+}
+
+
+button:nth-child(8):hover{
+  background-color: rgb(31, 166, 162); /* Slate Blue color for CE, C, and % buttons */
+  color: #fff; /* White text color for CE, C, and % buttons */
+}
+
+
+button:nth-child(12):hover{
+  background-color: rgb(31, 166, 162); /* Slate Blue color for CE, C, and % buttons */
+  color: #fff; /* White text color for CE, C, and % buttons */
+}
+
+
+button:nth-child(16):hover{
+  background-color: rgb(31, 166, 162); /* Slate Blue color for CE, C, and % buttons */
+  color: #fff; /* White text color for CE, C, and % buttons */
+}
+
+
+button:nth-child(20):hover {
+  background-color: rgb(31, 166, 162); /* Tomato color for operators */
+  color: #fff; /* White text color for operators */
+}
+
+/* Different color for CE, C, and % buttons */
+button:nth-child(1):hover{
+  background-color: rgb(31, 166, 162); /* Slate Blue color for CE, C, and % buttons */
+  color: #fff; /* White text color for CE, C, and % buttons */
+}
+
+button:nth-child(2):hover{
+  background-color: rgb(31, 166, 162); /* Slate Blue color for CE, C, and % buttons */
+  color: #fff; /* White text color for CE, C, and % buttons */
+}
+
+
+ button:nth-child(3):hover{
+  background-color: rgb(31, 166, 162); /* Slate Blue color for CE, C, and % buttons */
+  color: #fff; /* White text color for CE, C, and % buttons */
+}
+
+
+/* Different color for the "=" button */
+button:nth-child(20):hover {
+  background-color: #892ca5; /* Cadet Blue color for "=" button */
+  color: #fff; /* White text color for "=" button */
+}
+
+
+  
+  /*background: linear-gradient(180deg
+    orange,
+    rgb(249, 70,100),
+    rgb(244, 43, 244));*/
